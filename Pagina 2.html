@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construcciones LUILLY - Quiénes Somos</title>
+  <style>
+    :root {
+      --primary: #0a3d62;      /* Azul acero */
+      --accent: #f39c12;       /* Naranja dorado */
+      --text: #1f2937;
+      --bg: #f4f6f8;
+      --card-bg: #ffffffee;
+      --shadow: rgba(0,0,0,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', system-ui, sans-serif;
+      background: linear-gradient(180deg, #f4f6f8 0%, #e6ebef 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      background: linear-gradient(135deg, var(--primary), #1a5276);
+      color: white;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background-color: var(--accent);
+      border-radius: 2px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 1rem;
+      padding: 2rem;
+      flex: 1 1 300px;
+      max-width: 350px;
+      text-align: center;
+      box-shadow: 0 8px 20px var(--shadow);
+      transition: all 0.4s ease;
+      border-top: 6px solid var(--accent);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    .card img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid var(--accent);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #374151;
+      text-align: justify;
+    }
+
+    /* SECCIÓN DE BOTONES */
+    .boton-container {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .boton-siguiente {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      margin: 0 0.5rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      font-weight: 600;
+    }
+
+    .boton-siguiente:hover {
+      background-color: #f1b24a;
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    /* PIE DE PÁGINA */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: var(--primary);
+      color: white;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CONSTRUCCIONES LUILLY</h1>
+    <p>Calidad, innovación y compromiso en cada proyecto</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="f3.jpg" alt="Fundador">
+      <h2>INSTALACIÓN DE PLOMERÍA</h2>
+      <p>
+        Nos encargamos de diseñar, instalar y mantener sistemas hidráulicos y sanitarios 
+        en todo tipo de construcciones. Garantizamos instalaciones seguras, duraderas y 
+        eficientes, cumpliendo con los más altos estándares de calidad.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="f1.jpg" alt="Ingeniera">
+      <h2>REMODELACIÓN</h2>
+      <p>
+        Transformamos espacios con creatividad y precisión. Realizamos remodelaciones 
+        residenciales, comerciales e industriales, cuidando cada detalle estético y estructural 
+        para ofrecer resultados funcionales y atractivos.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="f2.jpg" alt="Obra Negra">
+      <h2>CONSTRUCCIÓN DE OBRAS NEGRAS</h2>
+      <p>
+        Nos especializamos en cimentación, estructura y construcción base de edificaciones. 
+        Aseguramos bases sólidas y duraderas con personal capacitado y materiales de primera calidad.
+      </p>
+    </div>
+  </main>
+
+  <div class="boton-container">
+    <button class="boton-siguiente" onclick="window.location.href='pagins 4.html'">📸 Galería</button>
+    <button class="boton-siguiente" onclick="window.location.href='Pagina 5.html'">📞 Contáctanos</button>
+  </div>
+
+  <footer>
+    © 2025 Construcciones LUILLY | Todos los derechos reservados
+  </footer>
+
+</body>
+</html>

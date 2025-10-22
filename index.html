@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bienvenidos Construcciones LUILLY</title>
+  <style>
+    :root{
+      --text: #ffffff;
+      --accent: #ff5722;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background-image: url("ft.jpg"); /* ← tu imagen de fondo */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .container{
+      text-align:center;
+      padding:2rem;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 1rem;
+    }
+
+    .welcome{
+      display:inline-block;
+      font-size:clamp(2rem, 8vw, 5rem);
+      font-weight:700;
+      letter-spacing:0.02em;
+      color:var(--text);
+      transition: color .22s ease, transform .22s ease, text-shadow .22s ease;
+      cursor:pointer;
+      padding: .25em .5em;
+      border-radius: .5rem;
+    }
+
+    .welcome:hover,
+    .welcome:focus-visible {
+      color:var(--accent);
+      transform: translateY(-6px) scale(1.03);
+      text-shadow: 0 12px 30px rgba(255,87,34,0.3);
+    }
+
+    .hint{
+      margin-top:1rem;
+      color:#f1f1f1;
+      font-size:0.95rem;
+    }
+
+    /* Estilos del botón */
+    .btn-siguiente {
+      margin-top: 1.5rem;
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      color: #fff;
+      background-color: var(--accent);
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-siguiente:hover {
+      background-color: #e64a19;
+      transform: scale(1.05);
+    }
+
+    .btn-siguiente:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="welcome" tabindex="0" role="heading" aria-level="1">
+      Bienvenidos a Construcciones LUILLY
+    </div>
+
+    
+
+    <!-- Botón de siguiente -->
+    <button class="btn-siguiente" onclick="window.location.href='Pagina 2.html'">
+      Siguiente →
+    </button>
+  </div>
+</body>
+</html>
